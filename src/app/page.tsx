@@ -12,7 +12,7 @@ const systemFonts = 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"S
 const Home = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const textElementsRef = useRef<HTMLElement[]>([]);
-
+  const lastY = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
@@ -34,17 +34,71 @@ const Home = () => {
       }
     );
 
+
     textElementsRef.current.forEach((el) => observer.observe(el));
+
+    const handleScroll = (event: WheelEvent) => {
+      const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
+
+      if (scrollTop === 0 && event.deltaY < 0) {
+        document.body.style.overflow = 'auto';
+      } else if (scrollTop + clientHeight === scrollHeight && event.deltaY > 0) {
+        document.body.style.overflow = 'auto';
+      } else {
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    const handleTouchMove = (event: TouchEvent) => {
+      const { scrollTop, clientHeight, scrollHeight } = scrollContainer;
+      const touch = event.touches[0];
+      const currentY = touch.clientY;
+
+      if (typeof lastY.current !== 'undefined') {
+        const deltaY = currentY - lastY.current;
+
+        if (scrollTop === 0 && deltaY > 0) {
+          document.body.style.overflow = 'auto';
+        } else if (scrollTop + clientHeight === scrollHeight && deltaY < 0) {
+          document.body.style.overflow = 'auto';
+        } else {
+          document.body.style.overflow = 'hidden';
+        }
+      }
+      lastY.current = currentY;
+    };
+
+    const handleTouchStart = (event: TouchEvent) => {
+      if (event.touches && event.touches.length === 1) {
+        lastY.current = event.touches[0].clientY;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      lastY.current = undefined;
+    };
+
+    scrollContainer.addEventListener('wheel', handleScroll, { passive: false });
+    scrollContainer.addEventListener('touchstart', handleTouchStart, { passive: false });
+    scrollContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
+    scrollContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     return () => {
       observer.disconnect();
+      scrollContainer.removeEventListener('wheel', handleScroll);
+      scrollContainer.removeEventListener('touchstart', handleTouchStart);
+      scrollContainer.removeEventListener('touchmove', handleTouchMove);
+      scrollContainer.removeEventListener('touchend', handleTouchEnd);
+      document.body.style.overflow = 'auto';
     };
   }, []);
+
   const setElementRef = (el: HTMLElement | null) => {
     if (el) {
       textElementsRef.current.push(el);
     }
   };
+
 
   return (
 
