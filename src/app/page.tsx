@@ -100,8 +100,8 @@ const Home = () => {
           </ul>
         </nav>
       </div>
-        <div className="mt-60 md:mt-60 sm:mt-6 flex md:block">
-          <ul className="ml-1 mt-8 items-center flex" aria-label="Social media">
+      <div className="mt-60 md:mt-60 sm:mt-6 hidden md:block">
+      <ul className="ml-1 mt-8 items-center flex" aria-label="Social media">
             <li className="mr-5 shrink-0 text-xs">
               <a
                 className="block hover:text-slate-200"
