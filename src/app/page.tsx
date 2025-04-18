@@ -216,14 +216,14 @@ const Home = () => {
                   },
                   {
                     date: '2022-2023',
-                    description: 'Initially studied computer engineering B.S.',
+                    description: 'Computer Engineering B.S.',
                     id: '2',
                     title: 'George Mason University'
                   },
 
                   {
                     date: '2023-2024',
-                    description: 'switched to Information Technology pursuing A.S.',
+                    description: 'switched to Information Technology A.S.',
                     id: '3',
                     title: 'Northern Virginia Community College'
                   },
