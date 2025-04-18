@@ -1,13 +1,10 @@
 'use client'
 
 import React, { useRef, useEffect } from 'react';
-import { ClassValue, clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-
 import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
-import AnimatedTimelinePage, { AnimatedTimeline } from '@/components/animata/progress/animatedtimeline';
+import AnimatedTimelinePage from '@/components/animata/progress/animatedtimeline';
 
 const systemFonts = 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
 
@@ -399,7 +396,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
             <p className="mt-2 text-sm leading-normal">A chess game in the cli with some fun ascii art. coded in Java, using a bash script to install the application. </p>
             {/**section 5 */}
             </div>
-          <img alt="Placeholder image for project one" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/chess-cli-ss.png"/>
+          <Image alt="Placeholder image for project one" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/chess-cli-ss.png"/>
         </div>
       </li>
       <li className="mb-12">
@@ -421,7 +418,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
             </h3>
             <p className="mt-2 text-sm leading-normal">portfolio application similar to this one, heavily inspired by fellow Next projects. created with React and NodeJS.</p>
           </div>
-          <img alt="Placeholder image for project two" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/react-app-ss.jpg"/>
+          <Image alt="Placeholder image for project two" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/react-app-ss.jpg"/>
         </div>
       </li>
       <li className="mb-12">
@@ -444,7 +441,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
             <p className="mt-2 text-sm leading-normal">Guide for United Stated expatriates stationed in Turkey. The app serves as an easy way to find emergency services, restaurants, and stores in the area. Created using Microsoft PowerApps, and Azure SQL.</p>
             {/* Optional: Add links or technologies here */}
           </div>
-          <img alt="Placeholder image for project two" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/dos.png"/>
+          <Image alt="Placeholder image for project two" loading="lazy" width={200} height={48} decoding="async" className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: 'transparent' }} src="/dos.png"/>
         </div>
       </li>
       {/* Add more project list items here */}
