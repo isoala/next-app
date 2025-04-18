@@ -100,7 +100,7 @@ const Home = () => {
           </ul>
         </nav>
       </div>
-      <div className="mt-60 md:mt-60 sm:mt-6 hidden md:block">
+      <div className="mt-60 lg:mt-60 sm:mt-6 hidden md:block">
       <ul className="ml-1 mt-8 items-center flex" aria-label="Social media">
             <li className="mr-5 shrink-0 text-xs">
               <a
@@ -174,7 +174,7 @@ const Home = () => {
       </div>
       {/* section 2 */}
 
-      <div className="md:w-[55%] flex flex-col h-screen overflow-y-auto overflow-x-hidden">
+      <div className="w-full md:w-[55%] flex flex-col h-screen overflow-y-auto overflow-x-hidden">
         <div
           ref={scrollContainerRef}
           className={cn(
