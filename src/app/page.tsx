@@ -5,6 +5,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
 import AnimatedTimelinePage from '@/components/animata/progress/animatedtimeline';
+import Link from 'next/link';
 
 const systemFonts = 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
 
@@ -55,7 +56,7 @@ const Home = () => {
     
       <div className="w-full md:w-[45%] p-10 md:p-20 flex flex-col items-start sticky top-2 md:top-10 h-auto md:h-screen backdrop-blur mt-2 md:mt-5"><div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex">
-            <a href="/">Abdurahman Alarcon</a>
+            <Link href="/">Abdurahman Alarcon</Link>
           </h1>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
             Student @ GMU
@@ -66,34 +67,34 @@ const Home = () => {
           <nav className="nav hidden lg:block md:block" aria-label="In-page jump links">
             <ul className="mt-16 w-max">
               <li>
-                <a className="group flex items-center py-3 active" href="#about">
+                <Link className="group flex items-center py-3 active" href="#about">
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="group flex items-center py-3 active" href="#school">
+                <Link className="group flex items-center py-3 active" href="#school">
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">School</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="group flex items-center py-3" href="#experience">
+                <Link className="group flex items-center py-3" href="#experience">
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="group flex items-center py-3" href="#resume">
+                <Link className="group flex items-center py-3" href="#resume">
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-300">Resume</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="group flex items-center py-3" href="#projects">
+                <Link className="group flex items-center py-3" href="#projects">
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
-                </a>
+                </Link>
               </li>
             {/* section 1 */}
             </ul>
@@ -190,8 +191,8 @@ const Home = () => {
             <h2 className="text-sm font-bold uppercase tracking-widest text-slate-300">About</h2>
               </div>
             <div className=" md:mt-10 lg:mt-5">
-              <p className="mb-4 text-left text-slate-400">I'm a student eager to expand my knowledge in the IT industry. My focus lies in actively seeking opportunities to deepen my understanding of various IT domains and stay abreast of the latest advancements shaping the digital landscape. I am particularly interested in cybersecurity, and I am committed to continuous learning and skill development to become a well-rounded IT professional.</p>
-              <p className="mb-4 text-left text-slate-400">In the past, I've had the opportunity to internship at the US embassy of Ankara working for the Department of State. This experience provided invaluable insights into the operational aspects of international diplomacy and the critical role of technology within such environments. During my time there, I developed a web application to streamline internal communication processes and also gained hands-on experience maintaining the embassy's network systems, ensuring their security and reliability.
+              <p className="mb-4 text-left text-slate-400">I'&apos;m a student eager to expand my knowledge in the IT industry. My focus lies in actively seeking opportunities to deepen my understanding of various IT domains and stay abreast of the latest advancements shaping the digital landscape. I am particularly interested in cybersecurity, and I am committed to continuous learning and skill development to become a well-rounded IT professional.</p>
+              <p className="mb-4 text-left text-slate-400">In the past, I&apos;ve had the opportunity to internship at the US embassy of Ankara working for the Department of State. This experience provided invaluable insights into the operational aspects of international diplomacy and the critical role of technology within such environments. During my time there, I developed a web application to streamline internal communication processes and also gained hands-on experience maintaining the embassy&apos;s network systems, ensuring their security and reliability.
                 </p>
                 <p className="mb-4 text-left text-slate-400"> In my freetime, I like to work out, play chess, and read. One of my favorite books is The Righteous Mind by Johnathan Haidt.
                 </p>
