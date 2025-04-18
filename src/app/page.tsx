@@ -174,7 +174,7 @@ const Home = () => {
       </div>
       {/* section 2 */}
 
-      <div className="md:w-[55%] flex flex-col h-screen">
+      <div className="md:w-[55%] flex flex-col h-screen overflow-y-auto overflow-x-hidden">
         <div
           ref={scrollContainerRef}
           className={cn(
