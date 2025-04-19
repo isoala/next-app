@@ -49,7 +49,7 @@ const Home = () => {
       "font-['var(--font-inter)'] font-feature-settings-['ss03','cv02','cv11']"
     )}>
 
-      <div className="w-full md:w-[45%] pt-4 pl-10 pr-10 md:p-20 flex flex-col items-start md:top-10 md:mt-5 sm:sticky overflow-y-clip "><div>
+      <div className="w-full md:w-[45%] pt-4 pl-10 pr-10 md:p-20 flex flex-col items-start md:top-10 md:mt-5 sm:sticky overflow-y-clip"><div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 md:text-5xl flex ">
           <Link href="/">Abdurahman Alarcon</Link>
         </h1>
@@ -169,10 +169,8 @@ const Home = () => {
       </div>
       {/* section 2 */}
 
-      <div className="w-full md:w-[55%] flex flex-col h-screen overflow-y-auto overflow-x-hidden">
-        
+      <div className="w-full md:w-[55%] flex flex-col lg:h-screen overflow-y-auto overflow-x-hidden">
           <div className="p-10 space-y-12 space-x-10">
-
 
             <section className=" mt-8 pt-10 text-left" id="about">
 
