@@ -44,7 +44,7 @@ const Home = () => {
   return (
 
     <div className={cn(
-      "flex flex-col md:flex-row min-h-screen bg-gray-100 dark:bg-gray-900",
+      "flex flex-col md:flex-row min-h-screen dark:bg-gray-900",
       systemFonts,
       "font-['var(--font-inter)'] font-feature-settings-['ss03','cv02','cv11']"
     )}>
