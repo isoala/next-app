@@ -49,8 +49,8 @@ const Home = () => {
       "font-['var(--font-inter)'] font-feature-settings-['ss03','cv02','cv11']"
     )}>
 
-      <div className="w-full md:w-[45%] p-10 sm:p-20 flex flex-col items-start md:top-10 sm:mt-5 sm:sticky overflow-y-clip"><div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex ">
+      <div className="w-full md:w-[45%] pt-4 pl-10 pr-10 md:p-20 flex flex-col items-start md:top-10 md:mt-5 sm:sticky overflow-y-clip "><div>
+        <h1 className="text-4xl font-bold tracking-tight text-slate-200 md:text-5xl flex ">
           <Link href="/">Abdurahman Alarcon</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
