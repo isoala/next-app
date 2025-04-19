@@ -431,7 +431,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
             <section id="fin" className="space-y-20 bg-gray-900">
               <p
                 ref={setElementRef}
-                className="text-base text-gray-600 dark:text-gray-400 transition-opacity">
+                className="text-base text-gray-400 transition-opacity">
                 I built this web application using&nbsp;
                 <Image
                   src="/next.svg" 
