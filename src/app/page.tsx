@@ -6,21 +6,15 @@ import { cn } from "@/lib/utils";
 import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
 import AnimatedTimelinePage from '@/components/animata/progress/animatedtimeline';
 import Link from 'next/link';
-
 const systemFonts = 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
 
 const Home = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const textElementsRef = useRef<HTMLElement[]>([]);
-  const disappearingDivRef = useRef<HTMLDivElement>(null);
-  const previousDivRef = useRef<HTMLDivElement>(null);
-
-
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,10 +30,7 @@ const Home = () => {
         threshold: [0, 0.1, 0.9, 1],
       }
     );
-    
-
     textElementsRef.current.forEach((el) => observer.observe(el));
-
     return () => {
       observer.disconnect();
     };
