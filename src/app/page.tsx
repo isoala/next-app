@@ -36,11 +36,7 @@ const Home = () => {
       observer.disconnect();
     };
   }, []);
-  const setElementRef = (el: HTMLElement | null) => {
-    if (el) {
-      textElementsRef.current.push(el);
-    }
-  };
+  
 
   return (
 
