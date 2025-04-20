@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from 'react';
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
+//import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
 import AnimatedTimelinePage from '@/components/animata/progress/animatedtimeline';
 import Link from 'next/link';
 const systemFonts = 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
