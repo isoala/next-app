@@ -126,27 +126,20 @@ const Home = () => {
               events={[
                 {
                   date: '2018-2022',
-                  description: 'AP student, team lead on Robotics FRC team 2791, president of Coding club, President of Chess Club',
+                  description: 'AP student, Math Honor Society, Science Honor Society, President of Coding Club',
                   id: '1',
                   title: 'Hayfield Secondary School'
                 },
                 {
-                  date: '2022-2023',
-                  description: 'Computer Engineering B.S.',
+                  date: '2022-2024',
+                  description: 'Information Technology A.S.',
                   id: '2',
-                  title: 'George Mason University'
-                },
-
-                {
-                  date: '2023-2024',
-                  description: 'switched to Information Technology A.S.',
-                  id: '3',
                   title: 'Northern Virginia Community College'
                 },
                 {
                   date: '2024-2026',
                   description: 'pursing Information Technology B.S.',
-                  id: '4',
+                  id: '3',
                   title: 'George Mason University'
                 }
               ]}
