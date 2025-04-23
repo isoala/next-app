@@ -53,6 +53,7 @@ const Home = () => {
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
           Student @ GMU
         </h2>
+        
         <p className="mt-4 max-w-xs leading-normal text-slate-400 flex">
           Pursuing B.S. in Information Technology, concentrating in cybersecurity.
         </p>
