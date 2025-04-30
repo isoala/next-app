@@ -55,7 +55,7 @@ const Home = () => {
         </h2>
         
         <p className="mt-4 max-w-xs leading-normal text-slate-400 flex">
-          Pursuing B.S. in Information Technology, concentrating in programming.
+          Pursuing B.S. in Information Technology, concentration in programming.
         </p>
         <nav className="nav hidden md:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
