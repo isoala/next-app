@@ -48,7 +48,7 @@ const Home = () => {
 
       <div className="w-full md:w-[45%] pl-6 pr-10 md:p-20 pt-10 flex flex-col items-start md:top-10 top-10 md:mt-5 md:sticky overflow-y-clip bg-gray-900"><div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 md:text-5xl flex">
-          <Link href="/">Abdurahman Alarcon</Link>
+          <Link href="/">Manny Alarcon</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
           Student @ GMU
