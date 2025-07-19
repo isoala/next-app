@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useRef, useEffect } from 'react';
+import Card from '../components/Card';
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 //import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
@@ -50,12 +51,16 @@ const Home = () => {
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 md:text-5xl flex">
           <Link href="/">Manny Alarcon</Link>
         </h1>
+        <div className="text-slate-400 mt-2 text-sm md:text-base flex md:flex">
+         <Card />
+        </div>
+
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
           Student @ GMU
         </h2>
         
         <p className="mt-4 max-w-xs leading-normal text-slate-400 flex">
-          Pursuing B.S. in Information Technology, concentration in Cybersecurity.
+          Pursuing B.S. in Information Technology, concentration in AI.
         </p>
         <nav className="nav hidden md:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
@@ -108,10 +113,10 @@ const Home = () => {
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-300 lg:pt-2">About</h2>
             </div>
             <div className=" md:mt-10 lg:mt-5">
-              <p className="mb-4 text-slate-400">I&apos;m a student eager to expand my knowledge in the IT industry. My focus lies in actively seeking opportunities to deepen my understanding of various IT domains and stay ahead of the latest advancements shaping the digital landscape. I am particularly interested in cybersecurity, and I am committed to continuous learning and skill development to become a well-rounded IT professional.</p>
-              <p className="mb-4 text-left text-slate-400">In the past, I&apos;ve had the opportunity to internship at the US embassy of Ankara working for the Department of State. This experience provided invaluable insights into the operational aspects of international diplomacy and the critical role of technology within such environments. During my time there, I developed a web application to streamline internal communication processes and also gained hands-on experience maintaining the embassy&apos;s network systems, ensuring their security and reliability.
+              <p className="mb-4 text-slate-400">I&apos;m a student eager to expand my knowledge in the IT industry. My focus lies in actively seeking opportunities to deepen my understanding of various IT domains and stay ahead of the latest advancements shaping the digital landscape. I am particularly interested in Machine Learning, and I am committed to continuous learning and skill development to become a well-rounded IT professional.</p>
+              <p className="mb-4 text-left text-slate-400">In the past, I&apos;ve had the opportunity to intern at the US embassy of Ankara working for the Department of State. This experience provided invaluable insights into the operational aspects of international diplomacy and the critical role of technology within such environments. During my time there, I developed a web application to streamline internal communication processes and also gained hands-on experience maintaining the embassy&apos;s network systems, ensuring their security and reliability.
               </p>
-              <p className="mb-4 text-left text-slate-400"> In my freetime, I like to work out, play chess, and read. One of my favorite books is The Righteous Mind by Johnathan Haidt.
+              <p className="mb-4 text-left text-slate-400"> In my freetime, I like to weightlift, play chess, and read. One of my favorite books is Crime and Punishment by Fyodor Dostoevsky.
               </p>
             </div>
           </section>
@@ -138,7 +143,7 @@ const Home = () => {
                   title: 'Northern Virginia Community College'
                 },
                 {
-                  date: '2024-2026',
+                  date: '2022-2026',
                   description: 'pursing Information Technology B.S.',
                   id: '3',
                   title: 'George Mason University'
@@ -177,7 +182,7 @@ const Home = () => {
                         <div>
                           <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.state.gov/" target="_blank" rel="noreferrer noopener" aria-label="Department of State (opens in a new tab)">
                             <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>DevOps Engineer Intern ·&nbsp;<span className="inline-block">Department of State<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group
+                            <span>IT Intern ·&nbsp;<span className="inline-block">Department of State<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group
 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg></span></span>
                           </a>
                         </div>
@@ -307,7 +312,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
                         <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://github.com/isoala/next-app" target="_blank" rel="noreferrer noopener" aria-label="Project Three (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>&nbsp;
-                            <span className="inline-block"> Next JS App
+                            <span className="inline-block"> Next.js Portfolio
 
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
                                 <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
@@ -329,7 +334,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
                         <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://github.com/isoala/isoapp-react" target="_blank" rel="noreferrer noopener" aria-label="Project Two (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>&nbsp;
-                            <span className="inline-block">React Application
+                            <span className="inline-block">React CV/Portfolio
 
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
                                 <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
@@ -351,7 +356,7 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
                         <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://github.com/isoala/Mission-Turkiye-Guide-PowerApps-Application-export" target="_blank" rel="noreferrer noopener" aria-label="Project Three (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>&nbsp;
-                            <span className="inline-block">PowerApps Guide Application
+                            <span className="inline-block">Mission Turkiye Guide
 
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
                                 <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>

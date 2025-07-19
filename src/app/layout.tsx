@@ -37,7 +37,7 @@ export default function RootLayout({
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@isoalaaa" />
         <meta property="twitter:site" content="@isoalaaa" />
-        <meta property="twitter:title" content="Abdurahman Alarcon - Information Technology Portfolio" />
+        <meta property="twitter:title" content="Abdurahman Alarcon - Portfolio" />
         <link rel="canonical" href="https://abdurahmanalarcon.com" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Abdurahman Alarcon" />
