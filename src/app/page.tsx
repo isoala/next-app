@@ -52,7 +52,7 @@ const Home = () => {
           <Link href="/">Manny Alarcon</Link>
         </h1>
         <div className="text-slate-400 mt-2 text-sm md:text-base flex md:flex">
-         <Card />
+         /*<Card />*/
         </div>
 
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl flex">
