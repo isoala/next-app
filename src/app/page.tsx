@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useRef, useEffect } from 'react';
-import Card from '../components/Card';
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 //import { GithubIcon, LinkedinIcon, MailIcon, InstagramIcon, XIcon } from '@/components/icons';
@@ -49,7 +48,7 @@ const Home = () => {
 
       <div className="w-full md:w-[45%] pl-6 pr-10 md:p-20 pt-10 flex flex-col items-start md:top-10 top-10 md:mt-5 md:sticky overflow-y-clip bg-gray-900"><div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 md:text-5xl flex">
-          <Link href="/">Manny Alarcon</Link>
+          <Link href="/">Ismaeel Alarcon</Link>
         </h1>
         <div className="text-slate-400 mt-2 text-sm md:text-base flex md:flex">
         </div>
