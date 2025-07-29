@@ -189,10 +189,11 @@ group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 m
 documents using Python and AI models, accurately identifying salaries, dates, and account numbers. Evaluated modern ML techniques by testing advanced AI models such as DocLLM, LangChain, and LayoutLM for document
 classification and data extraction, analyzing performance to determine the optimal tools for mortgage industry applications.</p>
                       <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Networking & routing</div></li>
-                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PowerApps</div></li>
-                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">SQL</div></li>
-                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">UI/UX</div></li>
+                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Python</div></li>
+                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">TensorFlow</div></li>
+                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">PyTorch</div></li>
+                        <li className="mr-1.5 mt-2"><div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">AWS</div></li>
+
                       </ul>
                     </div>
                   </div>
